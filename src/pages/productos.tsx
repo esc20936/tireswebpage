@@ -42,7 +42,7 @@ export default function productos() {
                     Otros Productos
                 </h1>   
                 <p className="text-sm font-light text-left text-white mt-2">
-                ¡En Importadora y Distribuidora Kayros, también tenemos una amplia selección de llantas japonesas y coreanas usadas, tanto al por mayor como al por menor, en diferentes medidas! Desde el Rim 12" hasta el Rim 18", encontrarás las llantas perfectas para adaptarse a tus necesidades. Nuestras llantas usadas ofrecen calidad y confiabilidad a precios asequibles.
+                ¡En Importadora y Distribuidora Kayros, también tenemos una amplia selección de llantas japonesas y coreanas usadas, tanto al por mayor como al por menor, en diferentes medidas! Desde el Rim 12 hasta el Rim 18, encontrarás las llantas perfectas para adaptarse a tus necesidades. Nuestras llantas usadas ofrecen calidad y confiabilidad a precios asequibles.
                 </p>
 
                 {/* ask about it button */}
