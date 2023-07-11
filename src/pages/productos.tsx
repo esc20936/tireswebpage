@@ -1,8 +1,8 @@
 import React from "react";
 import Navbar from "@/Components/Nav/Nav";
-import routes from "../Utils/routes";
 import Product from "@/Components/Product/Product";
 import products from "@/Utils/ProductSectionItems";
+import routes from './routes';
 import "@/app/globals.css";
 
 export default function productos() {

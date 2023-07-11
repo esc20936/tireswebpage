@@ -4,7 +4,26 @@ import { motion } from "framer-motion";
 import animations from "../Animations/Animations";
 import tire from "../../public/Images/tire.png"
 import Navbar from "@/Components/Nav/Nav";
-import routes from "@/Utils/routes";
+
+const routes = [
+  {
+      path: '/',
+      name: 'Inicio',
+  },
+  {
+      path: '/productos',
+      name: 'Productos',
+  },
+  {
+      path: '/sobre_nosotros',
+      name: 'Sobre Nosotros',
+  },
+  {
+      path:'/ofertas',
+      name: 'Ofertas',
+  },
+]
+
 
 export default function Inicio() {
   return (
