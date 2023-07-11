@@ -2,8 +2,26 @@ import React from "react";
 import Navbar from "@/Components/Nav/Nav";
 import Product from "@/Components/Product/Product";
 import products from "@/Utils/ProductSectionItems";
-import routes from './routes';
 import "@/app/globals.css";
+const routes = [
+    {
+        path: '/',
+        name: 'Inicio',
+    },
+    {
+        path: '/productos',
+        name: 'Productos',
+    },
+    {
+        path: '/sobre_nosotros',
+        name: 'Sobre Nosotros',
+    },
+    {
+        path:'/ofertas',
+        name: 'Ofertas',
+    },
+  ]
+  
 
 export default function productos() {
   return (
