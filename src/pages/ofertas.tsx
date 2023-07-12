@@ -41,55 +41,53 @@ const ofertas: ofertasProps[] = [
   {
     title: "Oferta 145R12",
     description:
-    "Aprovecha esta increíble oferta en neumáticos 145R12 en Importadora y Distribuidora Kayros. Equipa tu vehículo con neumáticos duraderos y confiables. Visítanos para obtener tus neumáticos al mejor precio. ¡No esperes más, aprovecha esta promoción por tiempo limitado!",
-    whatsappMessage:
-      "¡Hola! Quiero saber más sobre la oferta de neumaticos 145R12",
+      "Aprovecha esta increíble oferta en neumáticos 145R12 en Importadora y Distribuidora Kayros. Equipa tu vehículo con neumáticos duraderos y confiables. Visítanos para obtener tus neumáticos al mejor precio. ¡No esperes más, aprovecha esta promoción por tiempo limitado!",
+    whatsappMessage: "¡Hola! Quiero saber más sobre la oferta de 145R12",
     imagePath: sale145R12,
   },
   {
     title: "Oferta 205 /60R16",
     description:
-    "No te pierdas esta oferta en neumáticos 205/60R16 en Importadora y Distribuidora Kayros. Equipa tu vehículo con neumáticos de excelente rendimiento y agarre en carretera. Visítanos para obtener tus neumáticos al mejor precio. Aprovecha esta promoción por tiempo limitado y asegura un viaje seguro y confortable. ¡Adquiere tus neumáticos ahora!",
-    whatsappMessage:
-      "¡Hola! Quiero saber más sobre la oferta de neumaticos 205/60R16",
+      "No te pierdas esta oferta en neumáticos 205/60R16 en Importadora y Distribuidora Kayros. Equipa tu vehículo con neumáticos de excelente rendimiento y agarre en carretera. Visítanos para obtener tus neumáticos al mejor precio. Aprovecha esta promoción por tiempo limitado y asegura un viaje seguro y confortable. ¡Adquiere tus neumáticos ahora!",
+    whatsappMessage: "¡Hola! Quiero saber más sobre la oferta de 205/60R16",
     imagePath: sale20560R16,
   },
 ];
 
 export default function productos() {
   return (
-    <main className="flex h-full w-full flex-col bg-darkBlue items-center justify-start fixed inset-0 overflow-hidden ">
+    <main className="fixed inset-0 flex flex-col items-center justify-start w-full h-full overflow-hidden bg-darkBlue ">
       <Navbar routes={routes} theme="dark" />
-      <div className="h-screen-2 absolute left-2/8 bottom-1/16 w-full -rotate-37 bg-lightBlue -z-10"></div>
+      <div className="absolute w-full h-screen-2 left-2/8 bottom-1/16 -rotate-37 bg-lightBlue -z-10"></div>
 
       {/* title */}
-      <div className="h-auto w-full flex flex-col items-start justify-start p-4">
-        <h1 className="text-2xl md:text-5xl font-bold text-center uppercase text-white">
+      <div className="flex flex-col items-start justify-start w-full h-auto p-4">
+        <h1 className="text-2xl font-bold text-center text-white uppercase md:text-5xl">
           Ofertas
         </h1>
       </div>
 
-        <section className="h-full w-full flex flex-wrap items-start justify-center overflow-y-scroll">
-          {ofertas.map((oferta, index) => {
-            return (
-              <Sale
-                key={index}
-                title={oferta.title}
-                description={oferta.description}
-                whatsappMessage={oferta.whatsappMessage}
-                imagePath={oferta.imagePath}
-              />
-            );
-          })}
-          {ofertas.length === 0 && (
-            <div className="h-full w-full flex flex-col items-center justify-center mt-28">
-              <Image src={imagen} alt="empty" width={300} height={300} />
-              <h1 className="text-2xl md:text-5xl font-medium text-center uppercase text-white mt-4">
-                No hay ofertas disponibles
-              </h1>
-            </div>
-          )}
-        </section>
+      <section className="flex flex-wrap items-start justify-center w-full h-full overflow-y-scroll">
+        {ofertas.map((oferta, index) => {
+          return (
+            <Sale
+              key={index}
+              title={oferta.title}
+              description={oferta.description}
+              whatsappMessage={oferta.whatsappMessage}
+              imagePath={oferta.imagePath}
+            />
+          );
+        })}
+        {ofertas.length === 0 && (
+          <div className="flex flex-col items-center justify-center w-full h-full mt-28">
+            <Image src={imagen} alt="empty" width={300} height={300} />
+            <h1 className="mt-4 text-2xl font-medium text-center text-white uppercase md:text-5xl">
+              No hay ofertas disponibles
+            </h1>
+          </div>
+        )}
+      </section>
     </main>
   );
 }
