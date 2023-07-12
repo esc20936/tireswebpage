@@ -29,40 +29,38 @@ export default function Inicio() {
     "¡Hola! Quisiera saber más sobre los productos que ofrecen.";
 
   return (
-    <main className="flex h-full w-full flex-col bg-backgroundWhite items-center justify-start fixed inset-0 overflow-hidden ">
+    <main className="fixed inset-0 flex flex-col items-center justify-start w-full h-full overflow-hidden bg-backgroundWhite ">
       <Navbar routes={routes} />
-      <div className="h-screen-2 absolute left-2/8 md:-left-3/8 top-1/16 md:top-0 w-full rotate-37 md:-rotate-0    bg-accentColor -z-10"></div>
-      <div className="h-full w-full flex flex-col md:flex-row items-center justify-start">
-      <div
-        className="h-2/4 w-full flex flex-col items-center justify-center"
-      >
-        <h1 className="text-xl md:text-5xl font-bold text-center uppercase">Importadora</h1>
-        <h1 className="text-xl md:text-5xl font-bold text-center uppercase">y</h1>
-        <h1 className="text-xl md:text-5xl font-bold text-center uppercase">
-          Distribuidora
-        </h1>
-        <h1 className="text-xl md:text-5xl font-bold text-center uppercase">Kayros S.A.</h1>
+      <div className="absolute w-full h-screen-2 left-2/8 md:-left-3/8 top-1/16 md:top-0 rotate-37 md:-rotate-0 bg-accentColor -z-10"></div>
+      <div className="flex flex-col items-center justify-start w-full h-full md:flex-row">
+        <div className="flex flex-col items-center justify-center w-full h-2/4">
+          <h1 className="text-xl font-bold text-center uppercase md:text-5xl">
+            Importadora
+          </h1>
+          <h1 className="text-xl font-bold text-center uppercase md:text-5xl">
+            y
+          </h1>
+          <h1 className="text-xl font-bold text-center uppercase md:text-5xl">
+            Distribuidora
+          </h1>
+          <h1 className="text-xl font-bold text-center uppercase md:text-5xl">
+            Kayros S.A.
+          </h1>
+          <a
+            className="z-10 px-4 py-2 mt-12 text-xs font-medium uppercase transition duration-300 ease-in-out border-2 border-black border-solid rounded-md hover:bg-black hover:text-white "
+            href={`https://wa.me/50238288691?text=${whatsappMessage}`}
+          >
+            Contáctanos
+          </a>
+        </div>
 
-        <a className="border-solid border-2 border-black mt-12  py-2 px-4 rounded-md z-10
-          hover:bg-black hover:text-white transition duration-300 ease-in-out
-          text-xs  font-medium  uppercase
-          "
-        href={`https://wa.me/50238288691?text=${whatsappMessage}`}
-        
-        >
-          Contáctanos
-        </a>
-      </div>
-
-      <div
-        className="absolute top-4/8 left-3/8  md:relative md:top-0 md:left-0 w-8/12 h-3/4"
-      >
-        <Image
-          src={tire}
-          alt="Picture of the author"
-          className="object-contain h-full w-full"
-        />
-      </div>
+        <div className="absolute w-8/12 top-4/8 left-3/8 md:relative md:top-0 md:left-0 h-3/4">
+          <Image
+            src={tire}
+            alt="Picture of the author"
+            className="object-contain w-full h-full"
+          />
+        </div>
       </div>
     </main>
   );

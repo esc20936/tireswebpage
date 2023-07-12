@@ -28,12 +28,9 @@ const Navbar = ({ theme = "light", routes }: NavbarProps) => {
       <div className="w-full px-4 sm:px-0 lg:px-8">
         <div className="flex items-center justify-end h-16">
           <div className="flex items-center">
-            {/* <Link href="/" className="text-white font-bold text-lg">
-              E3 Solutions
-            </Link> */}
           </div>
-          <div className="hidden md:block mr-10">
-            <div className="ml-10 flex items-baseline space-x-4">
+          <div className="hidden mr-10 md:block">
+            <div className="flex items-baseline ml-10 space-x-4">
               {routes?.map((route) => (
                 <Link
                   key={route.name}
@@ -48,22 +45,22 @@ const Navbar = ({ theme = "light", routes }: NavbarProps) => {
           <div className="block md:hidden">
             <motion.button
               onClick={toggleNavbar}
-              className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 focus:outline-none"
+              className="inline-flex items-center justify-center p-2 text-gray-400 rounded-md focus:outline-none"
               aria-expanded={isOpen}
-              whileTap={{ scale: 0.9 }} // Example of tap animation, adjust as needed
+              whileTap={{ scale: 0.9 }} 
             >
               <span className="sr-only">Open main menu</span>
               {isOpen ? (
                 <motion.svg
-                  className="block h-6 w-6"
+                  className="block w-6 h-6"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
                   aria-hidden="true"
-                  initial={{ opacity: 0 }} // Initial state before animation
-                  animate={{ opacity: 1 }} // Animation when the button is rendered
-                  transition={{ duration: 0.3 }} // Transition duration
+                  initial={{ opacity: 0 }} 
+                  animate={{ opacity: 1 }}
+                  transition={{ duration: 0.3 }} 
                 >
                   <motion.path
                     strokeLinecap="round"
@@ -74,15 +71,15 @@ const Navbar = ({ theme = "light", routes }: NavbarProps) => {
                 </motion.svg>
               ) : (
                 <motion.svg
-                  className="block h-6 w-6"
+                  className="block w-6 h-6"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
                   aria-hidden="true"
-                  initial={{ opacity: 0 }} // Initial state before animation
-                  animate={{ opacity: 1 }} // Animation when the button is rendered
-                  transition={{ duration: 0.3 }} // Transition duration
+                  initial={{ opacity: 0 }} 
+                  animate={{ opacity: 1 }}
+                  transition={{ duration: 0.3 }} 
                 >
                   <motion.path
                     strokeLinecap="round"
