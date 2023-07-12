@@ -48,7 +48,7 @@ export default function Inicio() {
         ">
           <a
             className="text-xs  font-medium  uppercase"
-            href={`https://wa.me/50259312457?text=${whatsappMessage}`}
+            href={`https://wa.me/50238288691?text=${whatsappMessage}`}
           >
             Contáctanos
           </a>
