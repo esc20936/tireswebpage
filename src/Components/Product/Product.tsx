@@ -14,17 +14,22 @@ export default function Product({ title, description, index }: Props) {
 
   return (
     <div className="h-screen-auto w-full p-4 mt-4">
-      <div className={`h-full w-full flex flex-col ${rightAlign} justify-start`}>
-          <h1 className="text-2xl font-normal text-center uppercase text-whiteText2">
-            {title}
-          </h1>
-          <p className={`text-xs font-light ${textAlign} text-whiteText2 mt-4`}>
-            {description}
-          </p>
+      <div
+        className={`h-full w-full flex flex-col ${rightAlign} justify-start`}
+      >
+        <h1 className="text-2xl font-normal text-center uppercase text-whiteText2">
+          {title}
+        </h1>
+        <p className={`text-xs font-light ${textAlign} text-whiteText2 mt-4`}>
+          {description}
+        </p>
         <button className="border-solid border-2 border-white mt-6  py-2 px-8 rounded-lg">
-            <a className="text-xs  text-whiteText2 font-light"
-              href={`https://wa.me/50259312457?text=${whatsappMessage}`}
-            >Comprar</a>
+          <a
+            className="text-xs  text-whiteText2 font-light"
+            href={`https://wa.me/50259312457?text=${whatsappMessage}`}
+          >
+            Comprar
+          </a>
         </button>
       </div>
     </div>

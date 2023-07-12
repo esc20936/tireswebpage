@@ -9,15 +9,10 @@ interface NavbarProps {
   routes?: {
     name: string;
     path: string;
-    }[];
+  }[];
 }
 
-
-const Navbar = ( 
-  { theme = "light", routes }: NavbarProps
-) => {
-
-
+const Navbar = ({ theme = "light", routes }: NavbarProps) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const bgColor = theme === "light" ? "" : "bg-transparent";
@@ -39,19 +34,15 @@ const Navbar = (
           </div>
           <div className="hidden md:block mr-10">
             <div className="ml-10 flex items-baseline space-x-4">
-
-              {
-                routes?.map((route) => (
-                    <Link
-                        key={route.name}
-                        href={route.path}
-                        className={`${textColor} hover:text-gray-400 px-3 py-2 rounded-md text-sm font-medium`}
-                    >
-                        {route.name}
-                    </Link>
-                ))
-              }
-
+              {routes?.map((route) => (
+                <Link
+                  key={route.name}
+                  href={route.path}
+                  className={`${textColor} hover:text-gray-400 px-3 py-2 rounded-md text-sm font-medium`}
+                >
+                  {route.name}
+                </Link>
+              ))}
             </div>
           </div>
           <div className="block md:hidden">
@@ -114,19 +105,15 @@ const Navbar = (
             className={`md:hidden absolute w-full z-10 rounded-sm ${bgColorResponsive}  rounded `}
           >
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-
-                {
-                    routes?.map((route) => (
-                        <Link
-                            key={route.name}
-                            href={route.path}
-                            className={`${textColor} hover:text-gray-400 block px-3 py-2 rounded-md text-base font-medium`}
-                        >
-                            {route.name}
-                        </Link>
-                    ))
-                }
-    
+              {routes?.map((route) => (
+                <Link
+                  key={route.name}
+                  href={route.path}
+                  className={`${textColor} hover:text-gray-400 block px-3 py-2 rounded-md text-base font-medium`}
+                >
+                  {route.name}
+                </Link>
+              ))}
             </div>
           </motion.div>
         )}

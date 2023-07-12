@@ -2,33 +2,31 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import animations from "../Animations/Animations";
-import tire from "../../public/Images/tire.png"
+import tire from "../../public/Images/tire.png";
 import Navbar from "@/Components/Nav/Nav";
 
 const routes = [
   {
-      path: '/',
-      name: 'Inicio',
+    path: "/",
+    name: "Inicio",
   },
   {
-      path: '/productos',
-      name: 'Productos',
+    path: "/productos",
+    name: "Productos",
   },
   {
-      path: '/sobre_nosotros',
-      name: 'Sobre Nosotros',
+    path: "/sobre_nosotros",
+    name: "Sobre Nosotros",
   },
   {
-      path:'/ofertas',
-      name: 'Ofertas',
+    path: "/ofertas",
+    name: "Ofertas",
   },
-]
-
+];
 
 export default function Inicio() {
-
-  const whatsappMessage = "¡Hola! Quisiera saber más sobre los productos que ofrecen.";
-
+  const whatsappMessage =
+    "¡Hola! Quisiera saber más sobre los productos que ofrecen.";
 
   return (
     <main className="flex h-full w-full flex-col bg-backgroundWhite items-center justify-start fixed inset-0 overflow-hidden ">
@@ -45,18 +43,15 @@ export default function Inicio() {
           Distribuidora
         </h1>
         <h1 className="text-xl font-bold text-center uppercase">Kayros S.A.</h1>
-      
 
-      <button className="border-solid border-2 border-black mt-12  py-2 px-4 rounded-lg z-10"
-
-      >
-        <a className="text-xs  font-medium  uppercase"
-              href={`https://wa.me/50259312457?text=${whatsappMessage}`}
-
-        >
-          Contáctanos
-        </a>
-      </button>
+        <button className="border-solid border-2 border-black mt-12  py-2 px-4 rounded-lg z-10">
+          <a
+            className="text-xs  font-medium  uppercase"
+            href={`https://wa.me/50259312457?text=${whatsappMessage}`}
+          >
+            Contáctanos
+          </a>
+        </button>
       </motion.div>
 
       <motion.div
@@ -70,7 +65,6 @@ export default function Inicio() {
           className="object-contain h-full w-full"
         />
       </motion.div>
-
     </main>
   );
 }

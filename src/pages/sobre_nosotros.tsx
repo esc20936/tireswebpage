@@ -21,9 +21,7 @@ const routes = [
   },
 ];
 
-
 export default function sobre_nosotros() {
-
   const whatsappMessage = `Hola, quisiera saber más sobre los productos que ofrecen.`;
 
   return (
@@ -90,19 +88,21 @@ export default function sobre_nosotros() {
               </p>
             </div>
             <div className="h-auto w-full flex flex-col items-start justify-start mt-4">
-                <h1 className="text-sm  font-medium text-white">Teléfonos:</h1>
-                <p className="text-xs  font-light  text-white">
-                    <a href="tel:502 7755 5555 text-white">502 7755 5555</a>
-                </p>
+              <h1 className="text-sm  font-medium text-white">Teléfonos:</h1>
+              <p className="text-xs  font-light  text-white">
+                <a href="tel:502 7755 5555 text-white">502 7755 5555</a>
+              </p>
             </div>
 
             {/* ask about it button */}
             <div className="h-auto w-full flex flex-col items-center justify-center mt-4">
               <button className="border-solid border-2 border-white mt-12  py-2 px-6 rounded-lg">
-                <a className="text-xs  font-medium text-white"
-
-                     href={`https://wa.me/50259312457?text=${whatsappMessage}`}
-                >Contáctanos</a>
+                <a
+                  className="text-xs  font-medium text-white"
+                  href={`https://wa.me/50259312457?text=${whatsappMessage}`}
+                >
+                  Contáctanos
+                </a>
               </button>
             </div>
           </div>
