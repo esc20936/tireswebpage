@@ -22,6 +22,7 @@ const routes = [
   },
 ];
 
+
 export default function sobre_nosotros() {
   const defaultProps = {
     center: {
