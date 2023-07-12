@@ -95,16 +95,14 @@ export default function sobre_nosotros() {
               </p>
             </div>
             <div className="h-auto w-full flex flex-col items-center justify-center md:items-start mt-4">
-              <button className="border-solid border-2 border-white mt-12  py-2 px-6 rounded-lg text-white
+              <a className="border-solid border-2 border-white mt-12  py-2 px-6 rounded-lg text-white
               hover:bg-white hover:text-darkBlue ease-in-out duration-300
-              ">
-                <a
-                  className="text-xs  font-medium "
-                  href={`https://wa.me/50238288691?text=${whatsappMessage}`}
-                >
+              text-xs  font-medium 
+              "
+              href={`https://wa.me/50238288691?text=${whatsappMessage}`}
+              >
                   Contáctanos
-                </a>
-              </button>
+              </a>
             </div>
             </div>
           </div>

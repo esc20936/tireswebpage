@@ -69,14 +69,12 @@ export default function productos() {
 
             {/* ask about it button */}
             <div className="h-auto w-full flex flex-col items-center justify-center mt-4">
-              <button className="border-solid border-2 border-white mt-12 bg-white py-2 px-6 rounded-lg">
-                <a
-                  className="text-xs  font-medium text-black "
+              <a className="border-solid border-2 border-white mt-12 bg-white py-2 px-6 rounded-lg text-xs  font-medium text-black "
                   href={`https://wa.me/50238288691?text=${whatsappMessage}`}
-                >
+              
+              >
                   Consultar
-                </a>
-              </button>
+              </a>
             </div>
           </div>
         </div>
