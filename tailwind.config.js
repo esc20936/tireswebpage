@@ -17,9 +17,9 @@ module.exports = {
         'screen-3/5': '60vh',
         'screen-2/5': '40vh',
         'screen-1/5': '20vh',
-
-        // double screen height
         "screen-2": "200vh",
+
+        
       },
       colors: {
         backgroundWhite: '#FFF',

@@ -13,19 +13,21 @@ export default function Product({ title, description, index }: Props) {
   const whatsappMessage = `Hola, me interesa el producto ${title} de su sección de productos.`;
 
   return (
-    <div className="h-screen-auto w-full p-4 mt-4">
+    <div className="h-auto w-full md:w-80 p-4 mt-4 lg:mt-0 md:mx-4">
       <div
-        className={`h-full w-full flex flex-col ${rightAlign} justify-start`}
+        className={`h-full w-full flex flex-col ${rightAlign} md:items-start justify-start`}
       >
-        <h1 className="text-2xl font-normal text-center uppercase text-whiteText2">
+        <h1 className="text-2xl md:text-4xl font-normal text-center uppercase text-whiteText2">
           {title}
         </h1>
-        <p className={`text-xs font-light ${textAlign} text-whiteText2 mt-4`}>
+        <p className={`text-xs md:text-base font-light ${textAlign} md:text-left text-whiteText2 mt-4`}>
           {description}
         </p>
-        <button className="border-solid border-2 border-white mt-6  py-2 px-8 rounded-lg">
+        <button className="border-solid border-2 border-white mt-6  py-2 px-8 rounded-lg text-whiteText2
+        hover:bg-whiteText2 hover:text-slate-900 transition duration-300 ease-in-out
+        ">
           <a
-            className="text-xs  text-whiteText2 font-light"
+            className="text-xs md:text-base   font-semibold"
             href={`https://wa.me/50259312457?text=${whatsappMessage}`}
           >
             Comprar

@@ -41,7 +41,7 @@ const ofertas: ofertasProps[] = [
   {
     title: "Oferta 145R12",
     description:
-      "¡No te pierdas esta increíble oferta en neumáticos 145R12! En Importadora y Distribuidora Kayros. Esta es una oportunidad única para equipar tu vehículo con neumáticos duraderos y confiables. Aprovecha esta promoción por tiempo limitado y visita nuestras instalaciones para obtener tus neumáticos 145R12 al mejor precio. ¡No esperes más y aprovecha esta oferta ahora mismo!",
+    "Aprovecha esta increíble oferta en neumáticos 145R12 en Importadora y Distribuidora Kayros. Equipa tu vehículo con neumáticos duraderos y confiables. Visítanos para obtener tus neumáticos al mejor precio. ¡No esperes más, aprovecha esta promoción por tiempo limitado!",
     whatsappMessage:
       "¡Hola! Quiero saber más sobre la oferta de neumaticos 145R12",
     imagePath: sale145R12,
@@ -49,7 +49,7 @@ const ofertas: ofertasProps[] = [
   {
     title: "Oferta 205 /60R16",
     description:
-      "¡No dejes pasar esta oferta imperdible en neumáticos 205/60R16! En Importadora y Distribuidora Kayros. Aprovecha esta oportunidad única para equipar tu vehículo con neumáticos de excelente rendimiento y agarre en carretera. No esperes más y visita nuestras instalaciones para aprovechar esta promoción por tiempo limitado. Obtén tus neumáticos 205/60R16 al mejor precio y asegura un viaje seguro y confortable. ¡No pierdas esta oportunidad y adquiere tus neumáticos ahora mismo!",
+    "No te pierdas esta oferta en neumáticos 205/60R16 en Importadora y Distribuidora Kayros. Equipa tu vehículo con neumáticos de excelente rendimiento y agarre en carretera. Visítanos para obtener tus neumáticos al mejor precio. Aprovecha esta promoción por tiempo limitado y asegura un viaje seguro y confortable. ¡Adquiere tus neumáticos ahora!",
     whatsappMessage:
       "¡Hola! Quiero saber más sobre la oferta de neumaticos 205/60R16",
     imagePath: sale20560R16,
@@ -64,13 +64,12 @@ export default function productos() {
 
       {/* title */}
       <div className="h-auto w-full flex flex-col items-start justify-start p-4">
-        <h1 className="text-2xl font-bold text-center uppercase text-white">
+        <h1 className="text-2xl md:text-5xl font-bold text-center uppercase text-white">
           Ofertas
         </h1>
       </div>
 
-      <div className="flex flex-col h-auto w-full overflow-y-scroll">
-        <section className="h-full w-full flex flex-col items-center justify-start">
+        <section className="h-full w-full flex flex-wrap items-start justify-center overflow-y-scroll">
           {ofertas.map((oferta, index) => {
             return (
               <Sale
@@ -85,13 +84,12 @@ export default function productos() {
           {ofertas.length === 0 && (
             <div className="h-full w-full flex flex-col items-center justify-center mt-28">
               <Image src={imagen} alt="empty" width={300} height={300} />
-              <h1 className="text-2xl font-medium text-center uppercase text-white mt-4">
+              <h1 className="text-2xl md:text-5xl font-medium text-center uppercase text-white mt-4">
                 No hay ofertas disponibles
               </h1>
             </div>
           )}
         </section>
-      </div>
     </main>
   );
 }

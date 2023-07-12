@@ -31,20 +31,21 @@ export default function Inicio() {
   return (
     <main className="flex h-full w-full flex-col bg-backgroundWhite items-center justify-start fixed inset-0 overflow-hidden ">
       <Navbar routes={routes} />
-      <div className="h-screen-2 absolute left-2/8 top-1/16 w-full rotate-37 bg-accentColor -z-10"></div>
-      <motion.div
-        initial="hidden"
-        animate="visible"
+      <div className="h-screen-2 absolute left-2/8 md:-left-3/8 top-1/16 md:top-0 w-full rotate-37 md:-rotate-0    bg-accentColor -z-10"></div>
+      <div className="h-full w-full flex flex-col md:flex-row items-center justify-start">
+      <div
         className="h-2/4 w-full flex flex-col items-center justify-center"
       >
-        <h1 className="text-xl font-bold text-center uppercase">Importadora</h1>
-        <h1 className="text-xl font-bold text-center uppercase">y</h1>
-        <h1 className="text-xl font-bold text-center uppercase">
+        <h1 className="text-xl md:text-5xl font-bold text-center uppercase">Importadora</h1>
+        <h1 className="text-xl md:text-5xl font-bold text-center uppercase">y</h1>
+        <h1 className="text-xl md:text-5xl font-bold text-center uppercase">
           Distribuidora
         </h1>
-        <h1 className="text-xl font-bold text-center uppercase">Kayros S.A.</h1>
+        <h1 className="text-xl md:text-5xl font-bold text-center uppercase">Kayros S.A.</h1>
 
-        <button className="border-solid border-2 border-black mt-12  py-2 px-4 rounded-lg z-10">
+        <button className="border-solid border-2 border-black mt-12  py-2 px-4 rounded-md z-10
+          hover:bg-black hover:text-white transition duration-300 ease-in-out
+        ">
           <a
             className="text-xs  font-medium  uppercase"
             href={`https://wa.me/50259312457?text=${whatsappMessage}`}
@@ -52,19 +53,18 @@ export default function Inicio() {
             Contáctanos
           </a>
         </button>
-      </motion.div>
+      </div>
 
-      <motion.div
-        initial="hidden"
-        animate="visible"
-        className="absolute top-4/8 left-3/8 w-8/12 h-3/4"
+      <div
+        className="absolute top-4/8 left-3/8  md:relative md:top-0 md:left-0 w-8/12 h-3/4"
       >
         <Image
           src={tire}
           alt="Picture of the author"
           className="object-contain h-full w-full"
         />
-      </motion.div>
+      </div>
+      </div>
     </main>
   );
 }

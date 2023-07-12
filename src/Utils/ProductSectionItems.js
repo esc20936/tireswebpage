@@ -8,6 +8,8 @@ const products = [
         name: "Lexxis fórmula 7",
         description:"¡No busques más! En Importadora y Distribuidora Kayros tenemos el neumático perfecto para ti: el 225/50R15 Lexxis Fórmula 7. Este neumático de alta calidad ofrece un rendimiento excepcional en la carretera. Con su diseño especializado y compuesto de agarre superior, te brindará una conducción suave, un excelente control y una tracción óptima en todo momento."
     },
+   
+    
 ]
 
 export default products;

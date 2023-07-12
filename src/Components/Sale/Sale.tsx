@@ -15,7 +15,7 @@ export default function Sale({
   imagePath,
 }: Props) {
   return (
-    <div className="h-screen-3/5 w-7/8 my-4  ">
+    <div className="h-screen-3/5 md:h-s-150  w-7/8 md:w-96 m-4  ">
       <div
         className={`h-full w-full flex flex-col text-left justify-start bg-slate-900 p-4 rounded-lg`}
       >
@@ -30,10 +30,12 @@ export default function Sale({
         <h1 className="text-2xl font-normal text-left uppercase text-whiteText2 mt-4 ">
           {title}
         </h1>
-        <p className={`text-xs font-light text-left text-whiteText2 mt-4`}>
+        <p className={`text-sm font-normal text-left text-whiteText2 mt-4`}>
           {description}
         </p>
-        <button className="bg-blue-600 mt-6  py-2 px-8 rounded-lg">
+        <button className="bg-blue-600 mt-6  py-2 px-8 rounded-lg
+        hover:bg-blue-700 transition duration-300 ease-in-out
+        ">
           <a
             className="text-xs  text-white font-light"
             href={`https://wa.me/50259312457?text=${whatsappMessage}`}
