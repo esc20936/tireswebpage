@@ -91,7 +91,7 @@ export default function sobre_nosotros() {
             <div className="h-auto w-full flex flex-col items-start justify-start mt-4">
               <h1 className="text-sm  font-medium text-white md:text-lg ">Teléfonos:</h1>
               <p className="text-xs md:text-lg  font-light  text-white">
-                <a href="tel:502 7755 5555 text-white  ">502 7755 5555</a>
+                <a href="tel:50238288691">+502 3828 8691</a>
               </p>
             </div>
             <div className="h-auto w-full flex flex-col items-center justify-center md:items-start mt-4">
@@ -100,7 +100,7 @@ export default function sobre_nosotros() {
               ">
                 <a
                   className="text-xs  font-medium "
-                  href={`https://wa.me/50259312457?text=${whatsappMessage}`}
+                  href={`https://wa.me/50238288691?text=${whatsappMessage}`}
                 >
                   Contáctanos
                 </a>
@@ -108,40 +108,6 @@ export default function sobre_nosotros() {
             </div>
             </div>
           </div>
-
-
-
-
-        {/* <div className="h-screen-4/5 w-full flex flex-col items-start justify-start">
-          <div className="h-full w-full flex flex-col items-start justify-start p-4 rounded-lg ">
-            <h1 className="text-xl  text-center font-semibold text-white">
-              Información de contacto
-            </h1>
-            <div className="h-auto w-full flex flex-col items-start justify-start mt-4">
-              <h1 className="text-sm font-medium text-white">Dirección</h1>
-              <p className="text-xs  font-light text-white">
-                3av. 8-22 zona 1, Santa Cruz del Quiche, Quiche, Guatemala
-              </p>
-            </div>
-            <div className="h-auto w-full flex flex-col items-start justify-start mt-4">
-              <h1 className="text-sm  font-medium text-white">Teléfonos:</h1>
-              <p className="text-xs  font-light  text-white">
-                <a href="tel:502 7755 5555 text-white">502 7755 5555</a>
-              </p>
-            </div>
-
-            <div className="h-auto w-full flex flex-col items-center justify-center mt-4">
-              <button className="border-solid border-2 border-white mt-12  py-2 px-6 rounded-lg">
-                <a
-                  className="text-xs  font-medium text-white"
-                  href={`https://wa.me/50259312457?text=${whatsappMessage}`}
-                >
-                  Contáctanos
-                </a>
-              </button>
-            </div>
-          </div>
-        </div> */}
       </div>
     </main>
   );

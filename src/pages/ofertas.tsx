@@ -43,7 +43,7 @@ const ofertas: ofertasProps[] = [
     description:
     "Aprovecha esta increíble oferta en neumáticos 145R12 en Importadora y Distribuidora Kayros. Equipa tu vehículo con neumáticos duraderos y confiables. Visítanos para obtener tus neumáticos al mejor precio. ¡No esperes más, aprovecha esta promoción por tiempo limitado!",
     whatsappMessage:
-      "¡Hola! Quiero saber más sobre la oferta de neumaticos 145R12",
+      "¡Hola! Quiero saber más sobre la oferta de 145R12",
     imagePath: sale145R12,
   },
   {
@@ -51,7 +51,7 @@ const ofertas: ofertasProps[] = [
     description:
     "No te pierdas esta oferta en neumáticos 205/60R16 en Importadora y Distribuidora Kayros. Equipa tu vehículo con neumáticos de excelente rendimiento y agarre en carretera. Visítanos para obtener tus neumáticos al mejor precio. Aprovecha esta promoción por tiempo limitado y asegura un viaje seguro y confortable. ¡Adquiere tus neumáticos ahora!",
     whatsappMessage:
-      "¡Hola! Quiero saber más sobre la oferta de neumaticos 205/60R16",
+      "¡Hola! Quiero saber más sobre la oferta de 205/60R16",
     imagePath: sale20560R16,
   },
 ];

@@ -38,7 +38,7 @@ export default function Sale({
         ">
           <a
             className="text-xs  text-white font-light"
-            href={`https://wa.me/50259312457?text=${whatsappMessage}`}
+            href={`https://wa.me/50238288691?text=${whatsappMessage}`}
           >
             Consultar
           </a>

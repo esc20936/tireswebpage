@@ -27,8 +27,8 @@ export default function Product({ title, description, index }: Props) {
         hover:bg-whiteText2 hover:text-slate-900 transition duration-300 ease-in-out
         ">
           <a
-            className="text-xs md:text-base   font-semibold"
-            href={`https://wa.me/50259312457?text=${whatsappMessage}`}
+            className="text-xs md:text-base font-semibold"
+            href={`https://wa.me/50238288691?text=${whatsappMessage}`}
           >
             Comprar
           </a>

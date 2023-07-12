@@ -72,7 +72,7 @@ export default function productos() {
               <button className="border-solid border-2 border-white mt-12 bg-white py-2 px-6 rounded-lg">
                 <a
                   className="text-xs  font-medium text-black "
-                  href={`https://wa.me/50259312457?text=${whatsappMessage}`}
+                  href={`https://wa.me/50238288691?text=${whatsappMessage}`}
                 >
                   Consultar
                 </a>
