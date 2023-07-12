@@ -33,16 +33,15 @@ export default function Sale({
         <p className={`text-sm font-normal text-left text-whiteText2 mt-4`}>
           {description}
         </p>
-        <button className="bg-blue-600 mt-6  py-2 px-8 rounded-lg
+        <a className="bg-blue-600 mt-6  py-2 px-8 rounded-lg
         hover:bg-blue-700 transition duration-300 ease-in-out
-        ">
-          <a
-            className="text-xs  text-white font-light"
-            href={`https://wa.me/50238288691?text=${whatsappMessage}`}
-          >
+        text-xs  text-white font-light text-center"
+        href={`https://wa.me/50238288691?text=${whatsappMessage}`}
+        
+        >
+          
             Consultar
-          </a>
-        </button>
+        </a>
       </div>
     </div>
   );
