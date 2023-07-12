@@ -24,6 +24,9 @@ const routes = [
   
 
 export default function productos() {
+
+  const whatsappMessage = `Hola, me interesa saber sobre que otros productos tienen disponibles.`;
+
   return (
     <main className="flex h-full w-full flex-col bg-darkBlue items-center justify-start fixed inset-0 overflow-hidden ">
       <Navbar routes={routes} theme="dark" />
@@ -66,9 +69,12 @@ export default function productos() {
                 {/* ask about it button */}
                 <div className="h-auto w-full flex flex-col items-center justify-center mt-4">
                 <button className="border-solid border-2 border-white mt-12 bg-white py-2 px-6 rounded-lg">
-                    <h1 className="text-xs  font-medium text-black ">
+                    <a className="text-xs  font-medium text-black "
+                     href={`https://wa.me/50259312457?text=${whatsappMessage}`}
+
+                    >
                         Consultar
-                    </h1>
+                    </a>
                 </button>
                 </div>
 

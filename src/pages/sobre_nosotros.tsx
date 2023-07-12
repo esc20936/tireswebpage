@@ -1,7 +1,6 @@
 import React from "react";
 import Navbar from "@/Components/Nav/Nav";
-import Product from "@/Components/Product/Product";
-import products from "@/Utils/ProductSectionItems";
+
 import "@/app/globals.css";
 const routes = [
   {
@@ -24,13 +23,9 @@ const routes = [
 
 
 export default function sobre_nosotros() {
-  const defaultProps = {
-    center: {
-      lat: 15.029103,
-      lng: -91.148964,
-    },
-    zoom: 18,
-  };
+
+  const whatsappMessage = `Hola, quisiera saber más sobre los productos que ofrecen.`;
+
   return (
     <main className="flex h-full w-full flex-col bg-darkBlue items-center justify-start fixed inset-0 overflow-hidden ">
       <Navbar routes={routes} theme="dark" />
@@ -104,7 +99,10 @@ export default function sobre_nosotros() {
             {/* ask about it button */}
             <div className="h-auto w-full flex flex-col items-center justify-center mt-4">
               <button className="border-solid border-2 border-white mt-12  py-2 px-6 rounded-lg">
-                <h1 className="text-xs  font-medium text-white">Consultar</h1>
+                <a className="text-xs  font-medium text-white"
+
+                     href={`https://wa.me/50259312457?text=${whatsappMessage}`}
+                >Contáctanos</a>
               </button>
             </div>
           </div>
