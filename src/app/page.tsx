@@ -5,6 +5,7 @@ import animations from "../Animations/Animations";
 import tire from "../../public/Images/tire3.png";
 import Navbar from "@/Components/Nav/Nav";
 import Link from "next/link";
+import Head from "next/head";
 
 const routes = [
   {
@@ -31,6 +32,9 @@ export default function Inicio() {
 
   return (
     <main className="fixed inset-0 flex flex-col items-center justify-start w-full h-full overflow-hidden bg-backgroundWhite ">
+      <Head>
+        <meta name="google-site-verification" content="4aJoDhQpIOdM_kzv2COdtLaEcMHBWqtpN3JMEYV9f94" />
+      </Head>
       <Navbar routes={routes} />
       <div className="absolute w-full bg-accentColor h-screen-2 left-2/8 md:-left-3/8 top-1/16 md:top-0 rotate-37 md:-rotate-0 -z-10"></div>
       <div className="flex flex-col items-center justify-start w-full h-full md:flex-row">
