@@ -30,10 +30,9 @@ height: 100vh;
 .colorText {
   background: linear-gradient(
     90deg,
-    rgb(255, 234, 41) 33%,
-    rgb(255, 152, 74) 50%,
-    rgb(255, 224, 47) 67%,
-    rgb(255, 164, 27) 100%
+    rgb(255, 152, 42) 33%,
+    rgb(255, 85, 47) 67%,
+    rgb(27, 156, 255) 100%
   ); 
 
   background-size: 300%;
