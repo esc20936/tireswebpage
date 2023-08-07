@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 // import { Link } from 'react-router-dom'; // If you're using React Router
 
 interface NavbarProps {
-  theme?: "light" | "dark";
+  theme?: "light" | "dark" | "transparent";
   routes?: {
     name: string;
     path: string;
@@ -17,7 +17,8 @@ const Navbar = ({ theme = "light", routes }: NavbarProps) => {
 
   const bgColor = theme === "light" ? "" : "bg-transparent";
   const textColor = theme === "light" ? "text-gray-900" : "text-white";
-  const bgColorResponsive = theme === "light" ? "bg-white" : "bg-darkBlue";
+  const bgColorResponsive = theme === "light" ? "bg-white" : theme==="dark" ? "bg-darkBlue" : "bg-transparent";
+  const borderColor = theme === "light" ? "border-black" : "border-white";
 
   const toggleNavbar = () => {
     setIsOpen(!isOpen);
@@ -45,50 +46,11 @@ const Navbar = ({ theme = "light", routes }: NavbarProps) => {
           <div className="block md:hidden">
             <motion.button
               onClick={toggleNavbar}
-              className="inline-flex items-center justify-center p-2 text-gray-400 rounded-md focus:outline-none"
+              className={`inline-flex items-center ${textColor}  ${borderColor} justify-center p-2  border-2 rounded-md`}
               aria-expanded={isOpen}
               whileTap={{ scale: 0.9 }} 
             >
-              <span className="sr-only">Open main menu</span>
-              {isOpen ? (
-                <motion.svg
-                  className="block w-6 h-6"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  aria-hidden="true"
-                  initial={{ opacity: 0 }} 
-                  animate={{ opacity: 1 }}
-                  transition={{ duration: 0.3 }} 
-                >
-                  <motion.path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M6 18L18 6M6 6l12 12"
-                  />
-                </motion.svg>
-              ) : (
-                <motion.svg
-                  className="block w-6 h-6"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  aria-hidden="true"
-                  initial={{ opacity: 0 }} 
-                  animate={{ opacity: 1 }}
-                  transition={{ duration: 0.3 }} 
-                >
-                  <motion.path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M4 6h16M4 12h16M4 18h16"
-                  />
-                </motion.svg>
-              )}
+              Menu
             </motion.button>
           </div>
         </div>
