@@ -38,8 +38,12 @@ export default function Inicio() {
 
 
       <Head>
-        <meta name="google-site-verification" content="4aJoDhQpIOdM_kzv2COdtLaEcMHBWqtpN3JMEYV9f94" />
+        <meta
+          name="google-site-verification"
+          content="4aJoDhQpIOdM_kzv2COdtLaEcMHBWqtpN3JMEYV9f94"
+        />
       </Head>
+
       <Navbar routes={routes} theme="transparent" />
       <div className="absolute w-full h-full -z-10 md:h-full md:w-1/2 md:right-0 bg-lightColor">
         <Image
@@ -83,15 +87,16 @@ export default function Inicio() {
             >
               Contáctanos
             </a>
+
               <Link
                 className="px-4 py-2 mx-2 mt-12 text-xs font-medium text-white uppercase transition duration-300 ease-in-out border-2 border-white border-solid rounded-md md:border-white hover:scale-110 hover:bg-accentColor hover:text-black"
                 href="/productos"
               >
                 Productos
               </Link>
-            
-          </div>
-        </motion.div>
+            </div>
+          </motion.div>
+
 
         <div className="absolute w-8/12 top-4/8 md:relative md:top-0 md:left-0 h-3/4">
           {/* <Image
@@ -99,6 +104,7 @@ export default function Inicio() {
             alt="Picture of the author"
             className="object-contain w-full h-full"
           /> */}
+
         </div>
       </div>
     </main>
