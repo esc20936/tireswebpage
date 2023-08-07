@@ -27,7 +27,7 @@ export default function Product({ title, description, index }: Props) {
         href={`https://wa.me/50238288691?text=${whatsappMessage}`}
         
         >
-          Comprar
+          Consultar
         </a>
       </div>
     </div>
