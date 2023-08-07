@@ -40,6 +40,7 @@ export default function Inicio() {
           content="4aJoDhQpIOdM_kzv2COdtLaEcMHBWqtpN3JMEYV9f94"
         />
       </Head>
+
       <Navbar routes={routes} theme="transparent" />
       <div className="absolute w-full h-full bg-black -z-10 md:h-full md:w-1/2 md:right-0">
         <Image
