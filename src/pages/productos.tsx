@@ -38,7 +38,7 @@ export default function productos() {
           </h1>
         </div>
 
-        <section className="flex flex-wrap items-start justify-center w-full my-4 h-3/4">
+        <section className="flex flex-col flex-wrap items-center justify-center w-full h-auto gap-2 my-4">
           {products.map((product, index) => {
             return (
               <Product
@@ -46,12 +46,14 @@ export default function productos() {
                 index={index}
                 title={product.name}
                 description={product.description}
+                imagePath={product?.Image}
               />
             );
           })}
-        </section>
 
-        {/* other products */}
+         
+        </section>
+            {/* other products */}
         <div className="flex flex-col items-start justify-start w-full h-auto p-4 md:w-3/5">
           {/* card */}
           <div className="flex flex-col items-start justify-start w-full h-full p-4 rounded-lg bg-grayCard/80">
@@ -78,6 +80,7 @@ export default function productos() {
             </div>
           </div>
         </div>
+       
       </div>
     </main>
   );
