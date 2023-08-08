@@ -3,7 +3,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import animations from "../Animations/Animations";
 import tire from "../../public/Images/tire3.png";
-import hero from "../../public/Images/Hero.webp";
+import hero from "../../public/Images/heroo2.png";
 import Navbar from "@/Components/Nav/Nav";
 import Link from "next/link";
 import Head from "next/head";
@@ -62,7 +62,7 @@ export default function Inicio() {
           initial="hidden"
           animate="visible"
           variants={animations["fade-in-spring"]}
-          className="flex flex-col items-center justify-center w-full h-full text-xl font-bold text-center text-white uppercase md:w-full md:text-6xl"
+          className="flex flex-col items-center justify-center w-full h-full text-xl font-bold text-center text-white uppercase md:w-full md:text-5xl"
         >
           <div className="text-white md:text-black w-7/8">
             <h1 className="">Importadora</h1>
@@ -76,7 +76,7 @@ export default function Inicio() {
           <div className="z-10 flex flex-row items-center justify-center w-full mt-4 text-black md:mt-8">
 
             <Link
-              className="px-4 py-2 mx-2 mt-12 text-xs font-medium text-white uppercase transition duration-300 ease-in-out border-2 border-white border-solid rounded-md md:border-black md:text-black hover:scale-110 hover:bg-accentColor hover:text-black"
+              className="px-4 py-2 mx-2 mt-12 text-xs font-medium text-white uppercase transition duration-300 ease-in-out border-2 border-white border-solid rounded-md md:border-black md:text-black hover:scale-110 hover:text-black"
               href="/productos"
             >
               Productos

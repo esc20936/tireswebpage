@@ -17,7 +17,7 @@ const Navbar = ({ theme = "light", routes }: NavbarProps) => {
 
   const bgColor = theme === "light" ? "" : "bg-transparent";
   const textColor = theme === "light" ? "text-gray-900" : "text-white";
-  const bgColorResponsive = theme === "light" ? "bg-white" : theme==="dark" ? "bg-darkBlue" : "bg-transparent";
+  const bgColorResponsive = theme === "light" ? "bg-white" : theme==="dark" ? "bg-darkBlue" : "bg-gray-700";
   const borderColor = theme === "light" ? "border-black" : "border-white";
 
   const toggleNavbar = () => {
