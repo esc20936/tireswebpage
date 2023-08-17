@@ -1,2 +1,2 @@
 User-agent: *
-Allow: /
+Sitemap: https://llantasimportacion.vercel.app/sitemap.xml
