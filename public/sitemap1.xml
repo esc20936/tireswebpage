@@ -5,25 +5,27 @@
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
 <url>
-  <loc>https://llantasimportacion.vercel.app/</loc>
-  <lastmod>2023-08-08T18:45:41+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://llantasimportacion.vercel.app/productos</loc>
-  <lastmod>2023-08-08T18:45:41+00:00</lastmod>
+  <loc>https://www.llantasimportacion.xyz/</loc>
+  <lastmod>2023-08-23T21:58:05+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://llantasimportacion.vercel.app/sobre_nosotros</loc>
-  <lastmod>2023-08-08T18:45:41+00:00</lastmod>
+  <loc>https://www.llantasimportacion.xyz/productos</loc>
+  <lastmod>2023-08-23T21:58:05+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://llantasimportacion.vercel.app/ofertas</loc>
-  <lastmod>2023-08-08T18:45:41+00:00</lastmod>
-  <priority>1.00</priority>
+  <loc>https://www.llantasimportacion.xyz/sobre_nosotros</loc>
+  <lastmod>2023-08-23T21:58:05+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.llantasimportacion.xyz/ofertas</loc>
+  <lastmod>2023-08-23T21:58:05+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 
 
