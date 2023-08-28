@@ -1,12 +1,10 @@
 "use client";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import animations from "../Animations/Animations";
+import newLanding from "../../public/Images/newLanding.webp";
 import tire from "../../public/Images/Hero.webp";
-import tire2 from "../../public/Images/tire3.png";
-import hero from "../../public/Images/heroo2.png";
+import tire2 from "../../public/Images/tire3.webp";
 import Navbar from "@/Components/Nav/Nav";
-import Link from "next/link";
 import Head from "next/head";
 import "@/app/globals.css";
 
@@ -41,59 +39,6 @@ export default function Inicio() {
           content="4aJoDhQpIOdM_kzv2COdtLaEcMHBWqtpN3JMEYV9f94"
         />
       </Head>
-
-      {/* <div className="absolute w-full h-full overflow-hidden bg-black -z-10 md:h-full md:w-1/2 md:right-0 md:rounded-l-lg">
-        <Image
-          src={hero}
-          alt="Picture of the author"
-          className="object-cover w-full h-full opacity-40 md:opacity-100 "
-        />
-      </div>
-
-      <div className="flex flex-col items-center justify-center w-full min-h-screen md:w-1/2">
-        <motion.div
-          initial="hidden"
-          animate="visible"
-          variants={animations["fade-in-spring"]}
-          className="flex flex-col items-center justify-center w-full h-full text-xl font-bold text-center text-white uppercase md:w-full md:text-5xl"
-        >
-          <div className="text-white md:text-black w-7/8">
-            <h1 className="">Importadora</h1>
-            <h1 className="">y</h1>
-            <h1 className="">Distribuidora</h1>
-            <h1 className="">Kayros S.A.</h1>
-            <p className="mt-4 text-sm font-bold text-white md:text-black md:text-2xl">
-              ¡Contáctanos y conoce nuestros productos!
-            </p>
-          </div>
-          <div className="z-10 flex flex-row items-center justify-center w-full mt-4 text-black md:mt-8">
-            <Link
-              className="px-4 py-2 mx-2 mt-12 text-xs font-medium text-white uppercase transition duration-300 ease-in-out border-2 border-white border-solid rounded-md md:border-black md:text-black hover:scale-110 hover:text-black"
-              href="/productos"
-            >
-              Productos
-            </Link>
-          </div>
-          <div className="">
-            <p className="mt-20 text-xs font-light text-white md:text-black md:text-lg">
-              Para más información,{" "}
-              <a
-                className="font-semibold colorText"
-                href={`https://wa.me/50238288691?text=${whatsappMessage}`}
-              >
-                Contáctanos
-              </a>
-            </p>
-          </div>
-          <div>
-            <p className="mt-4 text-xs font-light text-white md:text-black md:text-lg">
-              Telefonos:<a href="tel:50238288691">+502 3828 8691</a> <br />
-              Dirección: 3av. 8-22 zona 1, Santa Cruz del Quiche, Quiche,
-              Guatemala
-            </p>
-          </div>
-        </motion.div>
-      </div> */}
       <Navbar routes={routes} theme="light" />
 
       <div className="h-auto mx-auto w-7/8">
@@ -112,18 +57,15 @@ export default function Inicio() {
 
               {/* call to action button*/}
               <button className="self-center px-6 py-2 mt-12 text-sm font-medium text-white duration-150 ease-in-out bg-orange-500 rounded-lg hover:scale-110 ">
-                <a
-                  href={`https://wa.me/50238288691?text=${whatsappMessage}`}
-                >
+                <a href={`https://wa.me/50238288691?text=${whatsappMessage}`}>
                   Contáctanos
                 </a>
               </button>
-
             </div>
           </div>
-          <img
+          <Image
             className="w-full h-[500px] md:max-h-[500px] object-cover rounded-lg"
-            src="https://images.pexels.com/photos/3806252/pexels-photo-3806252.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            src={newLanding}
             alt="/"
           />
         </div>
@@ -217,6 +159,48 @@ export default function Inicio() {
             </motion.div>
           </div>
         </div>
+
+        <section className="flex flex-col items-start justify-start w-full h-auto bg-black md:h-screen-3/5">
+          <div className="flex flex-col items-center justify-start w-full h-full bg-black md:flex-row-reverse">
+            <div className="flex flex-col items-start justify-center w-full h-full p-4 text-left ">
+              <h1 className="mb-4 text-2xl font-bold text-white md:text-4xl">
+                Servicios
+              </h1>
+              <p className="text-xs text-white">
+                En Importadora y Distribuidora Kairós S.A., nos enorgullece
+                proporcionar una amplia variedad de opciones para satisfacer sus
+                necesidades individuales de neumáticos. Ofrecemos una extensa
+                gama de neumáticos, que incluye tanto opciones nuevas como semi
+                nuevas. Ya sea que esté buscando el rendimiento y la
+                confiabilidad de los neumáticos nuevos, o la combinación de
+                valor y calidad de los semi nuevos, nuestra tienda tiene
+                exactamente lo que necesita. Nuestros neumáticos semi nuevos son
+                sometidos a una minuciosa inspección para garantizar su
+                excelente estado y desempeño, brindándole una alternativa
+                rentable y confiable para su vehículo. En Importadora y
+                Distribuidora Kairós S.A., estamos aquí para proporcionarle las
+                mejores opciones en neumáticos, adaptadas a sus preferencias y
+                presupuesto.
+              </p>
+            </div>
+            <div className="flex flex-col items-start justify-center w-full h-full p-4 text-left md:mt-0 ">
+              <h1 className="mb-4 text-2xl font-bold text-white md:text-4xl">
+                Teléfonos
+              </h1>
+              <a className="text-white" href="tel:+50255789040">
+                +502 3828 8691
+              </a>
+            </div>
+            <div className="flex flex-col items-start justify-center w-full h-full p-4 text-left md:mt-0 ">
+              <h1 className="mb-4 text-2xl font-bold text-white md:text-4xl">
+                Dirección
+              </h1>
+              <p className="mb-8 text-white">
+                3av. 8-22 zona 1, Santa Cruz del Quiche, Quiche, Guatemala
+              </p>
+            </div>
+          </div>
+        </section>
       </div>
     </main>
   );
