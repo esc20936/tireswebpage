@@ -28,7 +28,7 @@ module.exports = {
         accentColor: '#F0F436',
         whiteText2: "#F4F4F4",
         grayCard:"#353535",
-        lightColor: "#ffffffff"
+        lightColor: "#ffffff"
       },
       spacing:{
         "1/8": "12.5%",
